@@ -1,0 +1,71 @@
+#section1 {
+    width: 100%;
+    height: 100vh;
+    background: -webkit-linear-gradient(to right, rgba(76, 162, 175, 0.14), rgba(44, 62, 80, 0.1)), url(../recursos/Hero/hero2.jpg);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, rgba(76, 162, 175, 0.14), rgba(44, 62, 80, 0.1)), url(../recursos/Hero/hero2.jpg);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-attachment: fixed;
+    background-position: bottom;
+    background-size: cover;
+    /* FLEX */
+    display: flex;
+    align-items: center;
+    #section1__container__text {
+        font-family: "Raleway", sans-serif;
+        color: #fff;
+        margin: 150px 0px 150px 100px;
+        flex: 0 0 50%;
+        max-width: 1200px;
+    }
+    #section1__descripcion {
+        font-size: 60px;
+        color: #e9f5f9;
+        text-align: left;
+    }
+}
+
+#section1__big {
+    font-size: 100px;
+    color: #e9f5f9;
+    text-align: inherit;
+    text-shadow: 0px 5px 155px black;
+}
+
+#section1__bold {
+    font-size: 75px;
+    text-shadow: 0px 5px 155px black;
+}
+
+#section1__point {
+    font-size: 100px;
+    color: $blanco;
+    margin-left: 5px;
+    font-family: "Raleway", sans-serif;
+    text-shadow: 0px 5px 30px black;
+}
+
+#section1__success {
+    max-width: 50%;
+    flex: 0 0 50%;
+    height: 40vh;
+    margin-top: 60px;
+    text-shadow: 0px 5px 12px black;
+}
+
+#section1__works {
+    margin-top: 25px;
+    border: none;
+    padding: 15px 25px;
+    border-radius: 50px;
+    background: #3b4c54;
+    color: #e9f5f9;
+    font-size: 25px;
+    font-family: $tipografia-general;
+    box-shadow: 0 8px 20px -8px black;
+}
+
+#section1__works:hover {
+    background: $negro;
+    transition: all 500ms ease;
+}

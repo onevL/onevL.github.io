@@ -1,0 +1,32 @@
+@import '../SASS/variables.scss';
+#footer {
+    width: 100%;
+    background: $footer;
+    margin-top: 90px;
+    padding: 50px 0;
+    /* FLEX */
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    .footer__titulo {
+        font-family: $tipografia-enlaces;
+        font-size: 20px;
+        padding-bottom: 30px;
+    }
+    .footer__links {
+        font-family: $tipografia-enlaces;
+        color: $desc;
+        display: block;
+        font-size: 16px;
+        line-height: 35px;
+    }
+    .footer__links:hover {
+        color: $naranja;
+        transition: all 200ms ease;
+    }
+    .footer__icon {
+        margin-right: 15px;
+        font-size: 15px;
+    }
+    /* FOOTER COPY */
+}
