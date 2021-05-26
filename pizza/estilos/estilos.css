@@ -1,0 +1,471 @@
+                            * {
+                                margin: 0;
+                                padding: 0;
+                                box-sizing: border-box;
+                                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                                text-decoration: none;
+                            }
+                            
+                            .grid {
+                                display: grid;
+                                grid-template-columns: repeat(12, 1fr);
+                                width: 100%;
+                            }
+                            /* HEADER */
+                            
+                            header {
+                                background-color: #252428;
+                                color: white;
+                            }
+                            
+                            header .logo {
+                                grid-column: 1/5;
+                                display: flex;
+                            }
+                            
+                            header .grid .logo .img-logo {
+                                grid-column: 1/4;
+                                width: 70px;
+                                margin: 10px 20px;
+                            }
+                            
+                            header .logo p {
+                                line-height: 79px;
+                                font-size: 20px;
+                                font-family: "Satisfy", cursive;
+                                font-size: 40px;
+                                margin-left: 15px;
+                            }
+                            
+                            header .grid .enlaces {
+                                grid-column: 8/-1;
+                                /* FLEX */
+                                display: flex;
+                                align-items: center;
+                                flex-wrap: wrap;
+                                justify-content: space-evenly;
+                                font-size: 16px;
+                            }
+                            
+                            header .grid .enlaces a {
+                                color: white;
+                                height: 55%;
+                                width: 22%;
+                                text-align: center;
+                                line-height: 44px;
+                                font-family: "Roboto", sans-serif;
+                            }
+                            
+                            header .grid .enlaces a:hover {
+                                /* background: #ec2626; */
+                                background: #ec2124;
+                                border-radius: 10px;
+                            }
+                            
+                            header .grid .enlaces .icons-header {
+                                margin-right: 10px;
+                            }
+                            /* BANNER */
+                            
+                            section .banner {
+                                height: 50vh;
+                                width: 100%;
+                                background-image: url(../recursos/pizza\ banner.jpg);
+                                background-size: 100% 100%;
+                                text-align: center;
+                                background-attachment: fixed;
+                            }
+                            
+                            section .banner h1 {
+                                width: 100%;
+                                color: #fff;
+                                text-align: center;
+                                font-family: "Roboto", sans-serif;
+                                background-attachment: fixed;
+                                font-size: 80px;
+                                text-shadow: 0px px 55px rgb(0, 0, 0);
+                                padding-top: 20px;
+                            }
+                            
+                            section .banner p {
+                                width: 100%;
+                                color: white;
+                                font-size: 35px;
+                                text-align: center;
+                                text-shadow: 0px 7px 35px rgb(0, 0, 0);
+                                font-family: "Roboto", sans-serif;
+                                margin-top: 30px;
+                                font-weight: bolder;
+                            }
+                            
+                            section .banner input {
+                                background: #ec2124;
+                                border: transparent 1px solid;
+                                padding: 15px 45px;
+                                color: white;
+                                font-size: 25px;
+                                font-family: "Roboto", sans-serif;
+                                border-radius: 8px;
+                                box-shadow: 0 8px 20px -10px black;
+                                margin-top: 50px;
+                                position: relative;
+                            }
+                            
+                            section .banner input:hover {
+                                background: transparent;
+                                border: 1.5px solid white;
+                                font-weight: bolder;
+                            }
+                            /* VISITANOS */
+                            
+                            section .texto__visita {
+                                width: 50vw;
+                                margin: 0 auto 15px auto;
+                                text-align: center;
+                            }
+                            
+                            section .texto__visita h1 {
+                                font-family: "Roboto", sans-serif;
+                                font-size: 50px;
+                                padding-bottom: 15px;
+                            }
+                            
+                            section .texto__visita p {
+                                font-family: "Roboto", sans-serif;
+                                font-size: 30px;
+                                padding-bottom: 30px;
+                            }
+                            
+                            section .texto__visita img {
+                                height: 200px;
+                            }
+                            /* MAPA */
+                            
+                            section .mapa {
+                                width: 100%;
+                                display: flex;
+                                justify-content: center;
+                            }
+                            
+                            section .mapa iframe {
+                                width: 100%;
+                            }
+                            /* GALERIA */
+                            
+                            section .galeria {
+                                width: 80%;
+                                margin: 20px auto;
+                                /* GRID */
+                                display: grid;
+                                grid-template-columns: repeat(3, 1fr);
+                                gap: 10px;
+                                grid-auto-rows: 300px;
+                            }
+                            
+                            section .galeria img {
+                                width: 100%;
+                                height: 100%;
+                                object-fit: cover;
+                            }
+                            
+                            .galeria:nth-child(2) {
+                                grid-row: span 2;
+                            }
+                            
+                            .galeria:nth-child(5) {
+                                grid-row: span 2;
+                            }
+                            
+                            .galeria:nth-child(6) {
+                                grid-column: span 2;
+                            }
+                            
+                            .galeria:nth-child(8) {
+                                grid-column: span 2;
+                            }
+                            /* CARDS */
+                            
+                            .card__container {
+                                background: linear-gradient(180deg, #ec2626 50%, #fff 50%);
+                                height: 45vh;
+                                margin-top: 30px;
+                                /* FLEX */
+                                display: flex;
+                                justify-content: space-evenly;
+                                align-items: center;
+                            }
+                            
+                            section .card {
+                                background: #fff;
+                                width: 25%;
+                                height: 50%;
+                                box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+                                border-radius: 3px;
+                                text-align: center;
+                            }
+                            
+                            section .card .icon__card {
+                                font-size: 50px;
+                                margin: 20px 0;
+                            }
+                            
+                            section .card h1 {
+                                margin-bottom: 10px;
+                            }
+                            
+                            section .card p {
+                                margin-top: 10px;
+                                text-align: center;
+                            }
+                            /* FOOTER */
+                            
+                            footer {
+                                width: 100%;
+                                background: #252428;
+                                color: white;
+                                border-top: 1px solid white;
+                                height: 18vh;
+                                padding-bottom: 35px;
+                                /* FLEX */
+                                display: flex;
+                                justify-content: space-evenly;
+                                align-items: center;
+                            }
+                            
+                            .social {
+                                width: 18%;
+                                text-align: center;
+                                margin-top: 25px;
+                            }
+                            
+                            footer .social p {
+                                color: white;
+                                margin: 15px 0;
+                                font-family: "Roboto", sans-serif;
+                                font-size: 22px;
+                            }
+                            
+                            .icon__footer {
+                                color: white;
+                                font-size: 35px;
+                                border-radius: 10px;
+                                padding: 18px;
+                                border: solid 1px transparent;
+                            }
+                            
+                            .icon__footer:hover {
+                                border: solid 1px white;
+                            }
+                            /* RESPONSIVE */
+                            
+                            @media screen and (max-width:1494px) {
+                                section .banner p {
+                                    font-size: 25px;
+                                }
+                                section .banner input {
+                                    padding: 10px 30px;
+                                }
+                                section .banner h1 {
+                                    font-size: 60px;
+                                }
+                                section .banner p {
+                                    font-size: 30px;
+                                }
+                            }
+                            
+                            @media screen and (max-width:1170px) {
+                                section .banner h1 {
+                                    font-size: 55px;
+                                }
+                                section .banner p {
+                                    font-size: 25px;
+                                }
+                                section .banner {
+                                    height: 40vh;
+                                }
+                                header .grid .enlaces {
+                                    font-size: 12px;
+                                }
+                            }
+                            
+                            @media screen and (max-width:1027px) {
+                                section .banner {
+                                    height: 48vh;
+                                }
+                                section .banner h1 {
+                                    font-size: 55px;
+                                }
+                            }
+                            
+                            @media screen and (max-width:932px) {
+                                header .logo {
+                                    grid-column: 1/7;
+                                }
+                                section .banner {
+                                    height: 48vh;
+                                }
+                                section .galeria {
+                                    width: 90%;
+                                    grid-auto-rows: 250px;
+                                }
+                                section .card {
+                                    height: 60%;
+                                }
+                            }
+                            
+                            @media screen and (max-width:770px) {
+                                header .grid .enlaces {
+                                    font-size: 12px;
+                                }
+                                header .grid .enlaces a {
+                                    width: 28%;
+                                }
+                                section .banner h1 {
+                                    font-size: 50px;
+                                }
+                                section .banner p {
+                                    font-size: 25px;
+                                }
+                                section .banner input {
+                                    padding: 10px 30px;
+                                }
+                                section .card {
+                                    height: 65%;
+                                }
+                            }
+                            
+                            @media screen and (max-width:667px) {
+                                section .galeria {
+                                    grid-template-columns: repeat(2, 1fr);
+                                    gap: 10px;
+                                    grid-auto-rows: 250px;
+                                }
+                                .galeria:nth-child(4) {
+                                    grid-column: span 2;
+                                }
+                                .galeria:nth-child(6) {
+                                    grid-column: span 1;
+                                }
+                                .social {
+                                    width: 30%;
+                                    text-align: center;
+                                    margin-top: 35px;
+                                }
+                                section .card {
+                                    background: #fff;
+                                    height: 55%;
+                                    text-align: center;
+                                    width: 45%;
+                                    border-radius: 0;
+                                    flex-wrap: wrap;
+                                }
+                                .card__container {
+                                    background: #ec2124;
+                                    height: 52vh;
+                                    margin-top: 35px;
+                                    display: flex;
+                                    justify-content: space-evenly;
+                                    align-items: flex-start;
+                                    flex-wrap: wrap;
+                                    margin-bottom: 80px;
+                                }
+                                section .card {
+                                    height: 43%;
+                                    width: 45%;
+                                    border-radius: 10px;
+                                    margin: 14px 0 18px 0px;
+                                    padding: 0 20px;
+                                }
+                                header .logo p {
+                                    line-height: 79px;
+                                    font-size: 35px;
+                                    margin-left: 0px;
+                                }
+                                section .banner h1 {
+                                    font-size: 45px;
+                                }
+                                section .texto__visita {
+                                    width: 80vw;
+                                }
+                                .icon__footer {
+                                    font-size: 30px;
+                                }
+                                footer .social p {
+                                    font-size: 20px;
+                                }
+                                .gmap {
+                                    height: 300px;
+                                }
+                            }
+                            
+                            @media screen and (max-width:667px) {
+                                header .grid .enlaces {
+                                    grid-column: 7/-1;
+                                    font-size: 12px;
+                                }
+                                header .logo p {
+                                    line-height: 79px;
+                                    font-size: 25px;
+                                }
+                                section .banner h1 {
+                                    font-size: 38px;
+                                }
+                                section .banner p {
+                                    font-size: 22px;
+                                }
+                                section .galeria {
+                                    grid-auto-rows: 200PX;
+                                }
+                            }
+                            
+                            @media screen and (max-width:611px) {
+                                .card__container {
+                                    height: 85vh;
+                                }
+                                section .card {
+                                    height: 28%;
+                                    width: 68%;
+                                    border-radius: 10px;
+                                    margin: 20px 0 0px 0px;
+                                }
+                            }
+                            
+                            @media screen and (max-width:504px) {
+                                header .grid .enlaces {
+                                    grid-column: 7/-1;
+                                    font-size: 11px;
+                                }
+                                section .banner h1 {
+                                    font-size: 33px;
+                                }
+                                section .banner p {
+                                    font-size: 22px;
+                                }
+                                section .galeria {
+                                    grid-auto-rows: 200px;
+                                    gap: 5px;
+                                }
+                                header .grid .enlaces a {
+                                    width: 32%;
+                                }
+                                header .grid .logo .img-logo {
+                                    margin: 10px 20px;
+                                }
+                                /* MENU */
+                                header .logo {
+                                    grid-column: 1/-1;
+                                    display: flex;
+                                    justify-content: center;
+                                }
+                                header .grid .enlaces {
+                                    grid-column: 1/-1;
+                                    font-size: 12px;
+                                    padding: 0 0 10px 0;
+                                }
+                                header .grid .enlaces a {
+                                    height: 100%;
+                                }
+                                section .banner {
+                                    height: 40vh;
+                                }
+                            }
