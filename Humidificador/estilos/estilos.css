@@ -1,0 +1,527 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+:root {
+    --azuldeg: #144145;
+    --negrodeg: #1a1b1f;
+    --fullblack: #071617;
+    --black1: #1a1b1f;
+    --black2: #30353b;
+}
+
+header {
+    /* background: linear-gradient(#3097a1, #1b565c); */
+    background: #3097a1;
+    top: 0;
+    display: flex;
+}
+
+header .enlaces i {
+    margin-right: 5px;
+}
+
+header nav p {
+    color: rgb(255, 255, 255);
+    line-height: 66px;
+    font-size: 40px;
+}
+
+
+/* MENU */
+
+.menu {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: right;
+}
+
+.menu .logo {
+    display: flex;
+}
+
+.menu .logo img {
+    vertical-align: top;
+    height: 60px;
+    margin: 6px 40px 0 25px;
+}
+
+.menu .enlaces {
+    flex-grow: 1;
+}
+
+.menu .enlaces a {
+    color: white;
+    display: inline-block;
+    padding: 1.5em;
+    flex-grow: 1;
+    font-family: "Roboto", sans-serif;
+}
+
+.menu .enlaces #contacto {
+    color: white;
+}
+
+.menu .enlaces #contacto:hover {
+    color: black;
+}
+
+.menu .enlaces a:hover {
+    background-color: white;
+    color: black;
+}
+
+
+/* BACKGROUND */
+
+#background img {
+    width: 100%;
+    height: 85vh;
+    object-fit: cover;
+}
+
+header #background p {
+    font-family: "Roboto", sans-serif;
+    font-size: 50px;
+    color: white;
+    text-shadow: 0px 5px 80px black;
+    font-weight: bolder;
+    text-align: center;
+}
+
+
+/* SECTION 1 PRODUCTOS*/
+
+#section1 {
+    background-color: rgb(255, 255, 255);
+}
+
+#container__cards {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 50px auto 0 auto;
+}
+
+.card {
+    width: 30%;
+    overflow: hidden;
+    padding-bottom: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px -10px black;
+    text-align: center;
+}
+
+#section1 #container__cards .card img {
+    margin: 30px 0 40px 0;
+    width: 90%;
+    border-radius: 10px;
+    vertical-align: top;
+    object-fit: cover;
+}
+
+section article h2 {
+    padding-top: 30px;
+    font-family: 'Roboto', sans-serif;
+    padding: 30px 0 85px 0;
+    height: 100px;
+    color: black;
+}
+
+#section1 #container__cards .card .descripcion {
+    text-align: justify;
+    font-family: "Roboto", sans-serif;
+    margin: 0px 20px;
+    font-size: 18px;
+    overflow-x: hidden;
+    height: 115px;
+}
+
+#section1 #container__cards .card .button__h {
+    width: 80%;
+    margin: 25px auto 0 auto;
+    background: linear-gradient(#44d8e6, #1b565c);
+    text-align: center;
+    padding: 0.5em;
+    border-radius: 6px;
+    font-family: "Roboto", sans-serif;
+}
+
+#section1 #container__cards .card .button__h:hover {
+    background: linear-gradient(#57dce9, #29828a);
+}
+
+#section1 #container__cards .card .button__h a {
+    color: white;
+    font-size: 16px;
+}
+
+
+/* SECTION 2 INFORMATION */
+
+section #container__news {
+    width: 90%;
+    margin: 120px auto 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+section #container__news img {
+    width: 50%;
+    height: 300px;
+    object-fit: cover;
+    vertical-align: top;
+    border-radius: 10px;
+    margin: 0 25px 25px 0;
+    box-shadow: 0 8px 20px -10px black;
+}
+
+
+/* CARD NEWS */
+
+section #container__news .container__cards__news {
+    width: 40%;
+    height: 250px;
+    background-color: white;
+    padding: 15px 20px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px -10px black;
+    align-self: center;
+    margin: 0 25px 25px 0;
+}
+
+section #container__news .container__cards__news h3 {
+    font-family: "Roboto", sans-serif;
+    width: 100%;
+    text-align: left;
+    border-bottom: 2px solid #36adb8;
+    margin-bottom: 10px;
+    padding: 10px 0 10px 0;
+}
+
+section #container__news .container__cards__news p {
+    text-align: justify;
+    font-family: "Roboto", sans-serif;
+    height: 70%;
+    overflow-x: hidden;
+}
+
+
+/* SECTION3 WHERE TO USE */
+
+section #container__testimonios {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    text-align: center;
+    margin: 80px 0;
+    padding: 25px 0;
+}
+
+section #container__testimonios h1 {
+    width: 100%;
+    font-family: "Roboto", sans-serif;
+    font-size: 45px;
+    margin-bottom: 60px;
+}
+
+section #container__testimonios .card__testimonios {
+    width: 23%;
+    height: 400px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px -10px black;
+    padding-bottom: 50px;
+}
+
+section #container__testimonios .card__testimonios img {
+    width: 80%;
+    height: 90%;
+    border-radius: 10px;
+    object-fit: cover;
+    object-position: center;
+}
+
+section #container__testimonios .card__testimonios h2 {
+    margin: 12px;
+    margin-bottom: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+/* BANNER */
+
+section #container__banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section #container__banner img {
+    width: 100%;
+    object-fit: cover;
+    height: 60vh;
+}
+
+section #container__banner p {
+    position: absolute;
+    font-family: "Roboto", sans-serif;
+    font-size: 600%;
+    color: white;
+    text-shadow: 0px 5px 80px black;
+    font-weight: bolder;
+    text-align: center;
+}
+
+#background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#background img {
+    width: 100%;
+    height: 85vh;
+    object-fit: cover;
+    position: relative;
+}
+
+#background p {
+    position: absolute;
+    font-family: "Roboto", sans-serif;
+    font-size: 600%;
+    color: white;
+    text-shadow: 0px 5px 80px black;
+    font-weight: bolder;
+    text-align: center;
+}
+
+
+/* SECTION CONTACTO */
+
+section #container__contact {
+    width: 80%;
+    margin: 85px auto 30px auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+section #container__contact h1 {
+    font-family: "Roboto", sans-serif;
+    font-size: 45px;
+    margin-bottom: 50px;
+    width: 100%;
+    text-align: center;
+}
+
+section #container__contact p {
+    font-family: "Roboto", sans-serif;
+    font-size: 22px;
+    width: 80%;
+    text-align: center;
+}
+
+
+/* FORMULARIO */
+
+section #form__contact {
+    width: 30%;
+    height: auto;
+    margin: 50px auto;
+    position: relative;
+    border-radius: 20px;
+    display: flex;
+}
+
+section #form__contact #news__input {
+    width: 100%;
+    height: 100%;
+    padding: 22px 10px;
+    border-radius: 10px;
+    font-family: "Roboto", sans-serif;
+    border: solid 1px black;
+}
+
+section #form__contact #news__submit {
+    position: absolute;
+    right: 8px;
+    padding: 16px 10px;
+    border-radius: 10px;
+    background: linear-gradient(#44d8e6, #1b565c);
+    color: white;
+    font-family: "Roboto", sans-serif;
+    align-self: center;
+    border: none;
+}
+
+section #form__contact #news__submit:hover {
+    background: linear-gradient(#57dce9, #29828a);
+    border: none;
+}
+
+
+/* FOOTER */
+
+#footer__info {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    color: white;
+}
+
+#footer__info .footer__info__icons {
+    width: 25%;
+    padding: 40px 0;
+    text-align: center;
+    /* background: linear-gradient(180deg, var(--azuldeg) 0%, var(--negrodeg) 100%); */
+    /* background: #3097a1; */
+    background: linear-gradient(#3097a1, #1b565c);
+}
+
+.footer__icon {
+    font-size: 14px;
+}
+
+.title__footer {
+    font-size: 16px;
+    line-height: 30px;
+    font-family: "Roboto", sans-serif;
+}
+
+@media screen and (max-width: 950px) {
+    #background img {
+        width: 100%;
+        height: 50vh;
+    }
+    #background p {
+        font-size: 420%;
+    }
+    #container__cards {
+        justify-content: space-evenly;
+    }
+    .card {
+        width: 40%;
+        margin-bottom: 35px;
+    }
+    section #container__testimonios .card__testimonios {
+        width: 40%;
+        margin-bottom: 35px;
+    }
+    section #container__banner p {
+        font-size: 400%;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .menu {
+        display: flex;
+        justify-content: space-between;
+    }
+    .menu .enlaces {
+        flex-grow: 1;
+    }
+    .menu {
+        width: 100%;
+        text-align: center;
+    }
+    .menu .logo {
+        flex-grow: 1;
+        justify-content: center;
+    }
+    section #container__contact {
+        width: 100%;
+    }
+    section #container__contact p {
+        font-size: 22px;
+        width: 80%;
+        text-align: justify;
+    }
+    section #container__banner img {
+        height: 40vh;
+    }
+    #footer__info .footer__info__icons {
+        padding: 30px 0;
+    }
+    section #form__contact {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .menu .enlaces a {
+        padding: 20px;
+    }
+    #background p {
+        font-size: 400%;
+    }
+    .card {
+        width: 90%;
+        margin-bottom: 35px;
+    }
+    section #container__news {
+        justify-content: center;
+    }
+    section #container__news img {
+        width: 80%;
+    }
+    section #container__news .container__cards__news {
+        width: 75%;
+    }
+    section #container__testimonios .card__testimonios {
+        width: 80%;
+    }
+    section #form__contact {
+        width: 60%;
+    }
+    .title__footer {
+        font-size: 12px;
+    }
+    #background p {
+        font-size: 350%;
+    }
+}
+
+@media screen and (max-width: 451px) {
+    .menu .enlaces a {
+        padding: 15px;
+    }
+    .menu .logo {
+        flex-grow: 1;
+        justify-content: start;
+    }
+    header .menu .logo img {
+        margin-right: 25px;
+    }
+    header nav p {
+        font-size: 34px;
+    }
+}
+
+@media screen and (max-width: 411px) {
+    .menu .enlaces a {
+        padding: 10px;
+    }
+    .menu .logo {
+        flex-grow: 1;
+        justify-content: start;
+    }
+    header .menu .logo img {
+        margin-right: 25px;
+    }
+    header nav p {
+        font-size: 34px;
+    }
+    .title__footer {
+        font-size: 10px;
+    }
+}
