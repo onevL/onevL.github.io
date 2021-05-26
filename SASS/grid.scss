@@ -1,0 +1,153 @@
+@import '../SASS/variables.scss';
+#grid {
+    margin: 100px auto 0 auto;
+    width: 95%;
+    display: grid;
+    grid-template-columns: repeat(18, 1fr);
+    grid-auto-rows: 500px;
+    grid-gap: 30px;
+    //TOTAL
+    #grid__total {
+        grid-column: 1/4;
+        background: $mainDeg;
+        border-radius: 10px;
+        height: 80%;
+        align-self: center;
+        transition: ease all 250ms;
+    }
+    .card__titleBox {
+        border-bottom: $blanco solid 4px;
+        margin-top: 20px;
+        width: 100%;
+        padding-bottom: 25px;
+        text-align: center;
+    }
+    .card__titulo {
+        font-size: 50px;
+        color: $pureWhite;
+    }
+    #grid__amount {
+        color: $pureWhite;
+        font-size: 65px;
+        margin-top: 60px;
+        text-align: center;
+        transition: ease all 250ms;
+    }
+    /* DEPOSITOS */
+    #grid__formDepositos {
+        grid-column: 4/8;
+        background: $formDeg;
+        border-radius: 10px;
+    }
+    .grupo {
+        text-align: center;
+        position: relative;
+        display: flex;
+        justify-content: center;
+    }
+    input {
+        display: block;
+        width: 80%;
+        margin: 40px auto 0 auto;
+        padding: 15px 10px;
+        border: none;
+        background: none;
+        border-bottom: 2px solid $pureWhite;
+        color: $pureWhite;
+        cursor: pointer;
+        font-size: 18px;
+    }
+    label {
+        margin: 10px 0px;
+        color: $gris;
+        font-size: 14px;
+        display: block;
+        position: absolute;
+        bottom: 0;
+        left: 72px;
+        transition: all ease 450ms;
+    }
+    input:hover~label,
+    input:valid~label {
+        top: 5px;
+        left: 40px;
+        color: $pureWhite;
+        font-size: 18px;
+    }
+    .grid__barra {
+        width: 65%;
+        transition: ease width 350ms;
+    }
+    .grid__barra:hover {
+        width: 80%;
+        transition: ease width 450ms;
+    }
+    button {
+        display: block;
+        margin: 0 auto;
+        width: 50%;
+        padding: 10px 0;
+        margin-top: 110px;
+        border: none;
+        border-radius: 15px;
+        background: $pureWhite;
+        font-size: 20px;
+        color: $negro2;
+        transition: ease all 200ms;
+    }
+    button:hover {
+        background: $barraDeg;
+        color: $pureWhite;
+        transition: ease all 300ms;
+        width: 65%;
+        cursor: pointer;
+    }
+    /* RETIROS */
+    #grid__formRetiros {
+        grid-column: 8/12;
+        text-align: center;
+        border-radius: 10px;
+        background: $formDeg;
+    }
+    /* MOVIMIENTOS */
+    #grid__movimientos {
+        grid-column: 12/19;
+        text-align: center;
+        #grid__movimientosGlass {
+            background: rgb(230, 230, 250, 0.1);
+            border: 1px solid rgb(230, 230, 250, 0.2);
+            border-radius: 10px;
+            padding-bottom: 20px;
+        }
+        #grid__movimientos__containerBoxes {
+            /* FLEX */
+            display: flex;
+            justify-content: space-evenly;
+            overflow-x: hidden;
+            max-height: 370px;
+        }
+        .grid__boxMov {
+            width: 42%;
+            margin: 30px auto 0 auto;
+            color: $blanco;
+        }
+        .grid__movimientos__titulo {
+            padding: 12px 0;
+            width: 80%;
+            margin: 0 auto;
+            margin-bottom: 30px;
+        }
+        #grid__movimientos__elemento {
+            display: flex;
+            justify-content: space-evenly;
+            padding: 10px 0;
+        }
+        .grid__Amount {
+            margin-right: 30px;
+            font-size: 18px;
+        }
+        .grid__Desc {
+            font-size: 18px;
+        }
+    }
+}

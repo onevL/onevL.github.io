@@ -1,0 +1,183 @@
+header {
+  background: linear-gradient(#6A5ACD, #373276);
+  width: 100%;
+  height: 15vh;
+  /* FLEX */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header #header__titulo {
+  color: #fbe9eb;
+  font-family: "Lato", sans-serif;
+  font-size: 50px;
+  font-weight: 700;
+}
+
+#grid {
+  margin: 100px auto 0 auto;
+  width: 95%;
+  display: grid;
+  grid-template-columns: repeat(18, 1fr);
+  grid-auto-rows: 500px;
+  grid-gap: 30px;
+  /* DEPOSITOS */
+  /* RETIROS */
+  /* MOVIMIENTOS */
+}
+#grid #grid__total {
+  grid-column: 1/4;
+  background: linear-gradient(#6A5ACD, #373276);
+  border-radius: 10px;
+  height: 80%;
+  align-self: center;
+  transition: ease all 250ms;
+}
+#grid .card__titleBox {
+  border-bottom: #fbe9eb solid 4px;
+  margin-top: 20px;
+  width: 100%;
+  padding-bottom: 25px;
+  text-align: center;
+}
+#grid .card__titulo {
+  font-size: 50px;
+  color: #fff;
+}
+#grid #grid__amount {
+  color: #fff;
+  font-size: 65px;
+  margin-top: 60px;
+  text-align: center;
+  transition: ease all 250ms;
+}
+#grid #grid__formDepositos {
+  grid-column: 4/8;
+  background: linear-gradient(#708090, #22282c);
+  border-radius: 10px;
+}
+#grid .grupo {
+  text-align: center;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+#grid input {
+  display: block;
+  width: 80%;
+  margin: 40px auto 0 auto;
+  padding: 15px 10px;
+  border: none;
+  background: none;
+  border-bottom: 2px solid #fff;
+  color: #fff;
+  cursor: pointer;
+  font-size: 18px;
+}
+#grid label {
+  margin: 10px 0px;
+  color: #E6E6FA;
+  font-size: 14px;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 72px;
+  transition: all ease 450ms;
+}
+#grid input:hover ~ label,
+#grid input:valid ~ label {
+  top: 5px;
+  left: 40px;
+  color: #fff;
+  font-size: 18px;
+}
+#grid .grid__barra {
+  width: 65%;
+  transition: ease width 350ms;
+}
+#grid .grid__barra:hover {
+  width: 80%;
+  transition: ease width 450ms;
+}
+#grid button {
+  display: block;
+  margin: 0 auto;
+  width: 50%;
+  padding: 10px 0;
+  margin-top: 110px;
+  border: none;
+  border-radius: 15px;
+  background: #fff;
+  font-size: 20px;
+  color: #22282c;
+  transition: ease all 200ms;
+}
+#grid button:hover {
+  background: linear-gradient(to right, #6A5ACD, #6A5ACD, #E6E6FA);
+  color: #fff;
+  transition: ease all 300ms;
+  width: 65%;
+  cursor: pointer;
+}
+#grid #grid__formRetiros {
+  grid-column: 8/12;
+  text-align: center;
+  border-radius: 10px;
+  background: linear-gradient(#708090, #22282c);
+}
+#grid #grid__movimientos {
+  grid-column: 12/19;
+  text-align: center;
+}
+#grid #grid__movimientos #grid__movimientosGlass {
+  background: rgba(230, 230, 250, 0.1);
+  border: 1px solid rgba(230, 230, 250, 0.2);
+  border-radius: 10px;
+  padding-bottom: 20px;
+}
+#grid #grid__movimientos #grid__movimientos__containerBoxes {
+  /* FLEX */
+  display: flex;
+  justify-content: space-evenly;
+  overflow-x: hidden;
+  max-height: 370px;
+}
+#grid #grid__movimientos .grid__boxMov {
+  width: 42%;
+  margin: 30px auto 0 auto;
+  color: #fbe9eb;
+}
+#grid #grid__movimientos .grid__movimientos__titulo {
+  padding: 12px 0;
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+#grid #grid__movimientos #grid__movimientos__elemento {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 10px 0;
+}
+#grid #grid__movimientos .grid__Amount {
+  margin-right: 30px;
+  font-size: 18px;
+}
+#grid #grid__movimientos .grid__Desc {
+  font-size: 18px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  outline: none;
+  font-family: "Lato", sans-serif;
+}
+
+body {
+  background: #171a1e;
+}
+
+/*# sourceMappingURL=estilos.css.map */

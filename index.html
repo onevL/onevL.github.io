@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="CSS/estilos.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+    </style>
+</head>
+
+<body onload="cargarApp()">
+
+    <div id="container">
+        <!-- HEADER -->
+        <header>
+            <h1 id="header__titulo">My Bank</h1>
+
+        </header>
+
+        <!-- GRID -->
+        <main id="grid">
+
+            <!-- TOTAL -->
+            <div id="grid__total">
+                <div class="card__titleBox">
+                    <h1 class="card__titulo">Total</h1>
+                </div>
+                <h3 id="grid__amount">$</h3>
+            </div>
+
+            <!-- DEPOSITOS-->
+            <form action="#" id="grid__formDepositos" autocomplete="off">
+                <div id="grid__formContainer">
+
+                    <!-- TITULO -->
+                    <div class="card__titleBox">
+                        <h1 class="card__titulo card__titulo--modifier">Deposit</h1>
+                    </div>
+
+                    <div class="grupo">
+                        <input type="number" class="grid__barra" id="grid__depAmount" required>
+                        <label for="#">Amount</label>
+                    </div>
+
+                    <div class="grupo">
+                        <input type="text" class="grid__barra" id="grid__depDesc" required>
+                        <label for="#">Description</label>
+                    </div>
+                    <button type="submit" onclick="agregarDeposito()">Submit</button>
+                </div>
+
+            </form>
+
+            <!-- RETIROS -->
+            <form action="#" id="grid__formRetiros" autocomplete="off">
+                <div id="grid__forRetiros">
+                    <!-- TITULO -->
+                    <div class="card__titleBox">
+                        <h1 class="card__titulo card__titulo--modifier">Withdraw </h1>
+                    </div>
+
+                    <div class="grupo">
+                        <input type="number" class="grid__barra" id="grid__retAmount" required>
+                        <label for="#">Amount</label>
+                    </div>
+
+                    <div class="grupo">
+                        <input type="text" class="grid__barra" id="grid__retDesc" required>
+                        <label for="#">Description</label>
+                    </div>
+                    <button type="submit" onclick="agregarRetiro()">Submit</button>
+                </div>
+            </form>
+
+            <!-- MOVIMIENTOS -->
+            <div id="grid__movimientos">
+                <div id="grid__movimientosGlass">
+                    <!-- TITULO -->
+                    <div class="card__titleBox">
+                        <h1 class="card__titulo card__titulo--modifier">Transactions</h1>
+                    </div>
+
+                    <div id="grid__movimientos__containerBoxes">
+                        <!-- BOX DEPOSITOS -->
+                        <div class="grid__boxMov">
+                            <h2 class="grid__movimientos__titulo">Deposits</h2>
+                            <!-- CONTAINER LISTA -->
+                            <div id="grid__listaDep">
+                                <!-- ELEMENTOS DEP-->
+                                <div id="grid__movimientos__elemento">
+                                    <p class="grid__Amount" id="grid__mov__descDep">N/A</p>
+                                    <p class="grid__Desc" id="grid__mov__amoDep">N/A</p>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- BOX RETIROS -->
+                        <div class="grid__boxMov">
+                            <h2 class="grid__movimientos__titulo">withdraws</h2>
+                            <!-- CONTAINER LISTA -->
+                            <div id="grid__listaRet">
+                                <!-- ELEMENTOS RET -->
+                                <div id="grid__movimientos__elemento">
+                                    <p class="grid__Amount" id="mov__desRet">N/A</p>
+                                    <p class="grid__Desc" id="mov__amoRet">N/A</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </main>
+    </div>
+
+    <script src="JS/deposito.js"></script>
+    <script src="JS/retiros.js"></script>
+    <script src="JS/main.js"></script>
+</body>
+
+</html>
