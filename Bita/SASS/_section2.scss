@@ -1,0 +1,95 @@
+#section2 {
+    width: 65%;
+    margin: 90px auto 0 auto;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+    /* GRID */
+    grid-auto-rows: 550px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    img {
+        width: 100%;
+        height: 100%;
+    }
+    /* CARD1 */
+    #section2__card1 {
+        background-image: url(../recursos/Cards/teamwork.jpg);
+        background-size: cover;
+        background-position: bottom;
+        text-align: center;
+        /* FLEX */
+        display: flex;
+        align-items: center;
+        font-family: $tipografia-general;
+    }
+    #section2__subcard {
+        width: 90%;
+        height: 35%;
+        background: $fullwhite;
+        margin: auto;
+        border-radius: 10px;
+        overflow-y: hidden;
+    }
+    .section2__card__titulo {
+        color: $negro;
+        padding-top: 25px;
+        font-size: 28px;
+    }
+    .section2__card__titulo:hover {
+        color: $naranja;
+        transition: all 550ms ease;
+    }
+    #section2__card1__desc {
+        color: $desc;
+        font-size: 16px;
+        padding: 18px 0px 0 0px;
+        margin: 0 5px;
+        line-height: 28px;
+    }
+    /* CARD2 */
+    #section2__card2 {
+        display: grid;
+        grid-template-rows: 65% 35%;
+    }
+    #section2__baner1 {
+        background-image: url(../recursos/hero2.jpg);
+    }
+    #section2__subcard2 {
+        width: 100%;
+        height: 100%;
+        background: $fullwhite;
+        overflow-y: hidden;
+        font-family: $tipografia-general;
+        text-align: center;
+    }
+    #section2__card2__desc {
+        color: $desc;
+        font-size: 16px;
+        padding: 18px 0px 0 0px;
+        margin: 0 25px;
+        line-height: 28px;
+    }
+    /* CARD3 */
+    #section2__card3 {
+        display: grid;
+        grid-template-rows: 35% 65%;
+    }
+    #section2__subcard3 {
+        width: 100%;
+        height: 100%;
+        background: $fullwhite;
+        overflow-y: hidden;
+        font-family: "Raleway", sans-serif;
+        text-align: center;
+    }
+    #section2__card3__desc {
+        color: $desc;
+        font-size: 16px;
+        padding: 18px 0px 0 0px;
+        margin: 0 25px;
+        line-height: 28px;
+    }
+    #section2__card3__titulo:hover {
+        color: $naranja;
+        transition: all 550ms ease;
+    }
+}

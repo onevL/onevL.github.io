@@ -1,0 +1,23 @@
+@import '../SASS/variables.scss';
+#section4 {
+    width: 70%;
+    text-align: center;
+    font-family: $tipografia-general;
+    margin: 90px auto 0 auto;
+    .text__container {
+        width: 52%;
+        padding-top: 20px;
+        margin: 0 25px;
+        margin: auto;
+    }
+    .text__container__titulo {
+        font-size: 28px;
+        color: $negro;
+    }
+    .text__container__desc {
+        color: $desc;
+        line-height: 28px;
+        padding-top: 18px;
+        font-size: 18px;
+    }
+}

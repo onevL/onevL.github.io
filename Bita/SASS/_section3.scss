@@ -1,0 +1,97 @@
+@import '../SASS/variables.scss';
+#section3 {
+    width: 65%;
+    margin: 80px auto 0 auto;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-auto-rows: 350px;
+    row-gap: 80px;
+    /* CARD1 */
+    #section3__containercard1 {
+        text-align: left;
+        font-family: $tipografia-general;
+        grid-column: 1/4;
+    }
+    .section3__container__text {
+        overflow-y: hidden;
+        max-height: 60%;
+    }
+    .section3__card__title {
+        color: $negro;
+        padding-top: 20px;
+        font-size: 28;
+        margin: 0 25px;
+    }
+    .section3__card__title:hover {
+        color: $naranja;
+        transition: all 550ms ease;
+    }
+    .section3__card__desc {
+        color: $desc;
+        font-size: 16px;
+        padding: 18px 0px 0 0px;
+        margin: 0 25px;
+        line-height: 28px;
+    }
+    .section3__button {
+        margin: 20px 0 0 25px;
+        text-align: center;
+        background: $negro;
+        color: #e9f5f9;
+        border: none;
+        padding: 13px 25px;
+        font-size: 18px;
+        border-radius: 20px;
+    }
+    .section3__button:hover {
+        background: $naranja;
+        transition: all 400ms ease;
+    }
+    /* BANNER1 */
+    #section3__banner1 {
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-position: center;
+        border-radius: 10px;
+        grid-column: 4/9;
+    }
+    /* BANNER2 */
+    #section3__banner2 {
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-position: center;
+        border-radius: 10px;
+        grid-column: 1/6;
+    }
+    /* CARD2 */
+    #section3__containercard2 {
+        text-align: left;
+        font-family: $tipografia-general;
+        grid-column: 6/9;
+    }
+    .section3__card__title--modifier {
+        color: $negro;
+        padding-top: 20px;
+        font-size: 28;
+        margin: 0 50px;
+    }
+    .section3__card__desc--modifier {
+        color: $desc;
+        font-size: 16px;
+        padding: 18px 0px 0 0px;
+        margin: 0 50px;
+        line-height: 28px;
+    }
+    .section3__button--modifier {
+        margin: 20px 0 0 50px;
+        text-align: center;
+        background: $negro;
+        color: #e9f5f9;
+        border: none;
+        padding: 13px 25px;
+        font-size: 18px;
+        border-radius: 20px;
+    }
+}

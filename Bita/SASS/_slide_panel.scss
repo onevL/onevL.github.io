@@ -1,0 +1,51 @@
+@import '../SASS/variables.scss';
+#nav__slide {
+    height: 100vh;
+    width: 0;
+    background: $azul2;
+    background: linear-gradient($azul2, $negro);
+    transition: 0.5s;
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    box-shadow: 10px 0px 10px rgba(0, 0, 0, 0.2);
+    .header__close {
+        font-size: 18px;
+        position: absolute;
+        right: 20px;
+        top: 15px;
+        border: none;
+        background: none;
+        color: $blanco;
+        padding: 10px;
+        border: solid transparent 1px;
+    }
+    .header__close:hover {
+        cursor: pointer;
+        border-radius: 8px;
+        border: solid $blanco 0.5px;
+        transition: all 100ms ease;
+    }
+    .nav__slide__container__enlaces {
+        margin-top: 70px;
+    }
+    .nav__slide__enlaces {
+        display: block;
+        color: $blanco;
+        font-family: $tipografia-general;
+        padding: 20px;
+        font-size: 15px;
+        border-left: 5px solid $naranja;
+        margin-bottom: 5px;
+    }
+    .nav__slide__enlaces:hover {
+        border-left: 30px solid $naranja;
+        background: $naranja;
+        transition: all 100ms ease;
+        font-size: 18px;
+    }
+    #header__hero {
+        position: relative;
+    }
+}
